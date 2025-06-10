@@ -1,10 +1,8 @@
 # Plan de Estudios: Fundamentos de IA
 
-Nuestro viaje se centrará en el Machine Learning y el Deep Learning, con un enfoque en la comprensión conceptual y la implementación práctica en Python.
+Consolidación de conocimientos referentes al Machine Learning y el Deep Learning, con un enfoque en la comprensión conceptual y la implementación práctica en Python.
 
 ## Módulo 1: Fundamentos de Python para IA (Revisión/Preparación)
-
-_(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar que todo esté claro.)_
 
 - **1.1. Repaso Rápido de Python Esencial:**
   - Variables, tipos de datos, estructuras de control (`if/else`, bucles `for`/`while`).
@@ -17,8 +15,6 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
 - **1.3. Introducción a Matplotlib:**
   - Creación de gráficos simples (dispersión, línea) para visualizar datos y resultados.
 
-**Pregunta de Comprensión:** ¿Te sientes cómodo con estos fundamentos de Python y NumPy? ¿Hay algo que te gustaría repasar brevemente antes de continuar?
-
 ---
 
 ## Módulo 2: Conceptos Básicos de Machine Learning
@@ -28,6 +24,7 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
   - **Aprendizaje Supervisado vs. No Supervisado:** Explicación clara y ejemplos.
   - **Regresión vs. Clasificación:** Diferencias fundamentales y ejemplos.
 - **2.2. El Primer Algoritmo: Regresión Lineal (Desde Cero)**
+
   - **Concepto:** Predecir un valor numérico continuo.
   - **La Ecuación de la Línea:** $y = mx + b$ (para una sola característica) y su generalización $y = w_0 + w_1x_1 + w_2x_2 + ... + w_nx_n$ (múltiples características).
   - **Concepto de "Mejor Ajuste":** ¿Cómo definimos qué línea es la "mejor"?
@@ -49,15 +46,11 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
     - Bucle de entrenamiento (épocas).
   - **Visualización:** Graficar los datos, la línea de regresión y cómo la línea se ajusta mejor con cada época. Mostrar cómo el error disminuye.
 
-**Pregunta de Comprensión:** ¿Entendiste la Regresión Lineal, la función de costo MSE y la intuición detrás del Descenso de Gradiente?
-
 - **2.3. Regresión Lineal con Scikit-learn:**
   - Introducción a Scikit-learn: Por qué y cuándo usar librerías.
   - Uso de `LinearRegression` de `sklearn.linear_model`.
   - Comparar la complejidad de la implementación manual vs. la librería.
   - Ventajas: eficiencia, robustez, características adicionales.
-
-**Pregunta de Comprensión:** ¿Ves la diferencia entre implementar desde cero y usar una librería?
 
 ---
 
@@ -67,6 +60,7 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
   - Ejemplos de problemas de clasificación (spam/no spam, gato/perro).
   - Clasificación binaria vs. multiclase.
 - **3.2. Regresión Logística (Desde Cero):**
+
   - **Concepto:** Aunque se llama "regresión", es un algoritmo de **clasificación**.
   - **La Función Sigmoide:**
     - Explicación: $f(z) = \frac{1}{1 + e^{-z}}$.
@@ -87,13 +81,9 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
     - **Matriz de Confusión:** Verdaderos Positivos, Falsos Positivos, Verdaderos Negativos, Falsos Negativos.
     - **Precisión (Precision), Exhaustividad (Recall), Puntuación F1 (F1-score):** Explicación conceptual de su importancia para problemas desbalanceados.
 
-**Pregunta de Comprensión:** ¿Captaste la idea de la Regresión Logística, la función sigmoide y la función de costo Entropía Cruzada?
-
 - **3.3. Regresión Logística con Scikit-learn:**
   - Uso de `LogisticRegression` de `sklearn.linear_model`.
   - Comparación y ventajas.
-
-**Pregunta de Comprensión:** ¿Cómo te sientes con la transición a librerías después de la implementación manual?
 
 ---
 
@@ -102,6 +92,7 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
 - **4.1. El Perceptrón y sus Limitaciones (Revisión):**
   - Confirmar por qué un solo Perceptrón no puede resolver problemas no linealmente separables (ej. XOR).
 - **4.2. Redes Neuronales Multicapa (MLP - Desde Cero):**
+
   - **Concepto:** Apilamiento de neuronas en capas (entrada, oculta, salida).
   - **Funciones de Activación No Lineales:**
     - ¿Por qué son necesarias? (Para resolver problemas no lineales).
@@ -117,8 +108,6 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
   - **Implementación Simplificada en Python Puro de un MLP Básico con Retropropagación:**
     - Para un problema como XOR, mostrando cómo los pesos se ajustan.
     - El papel del optimizador (e.g., Descenso de Gradiente Estocástico - SGD).
-
-**Pregunta de Comprensión:** ¿Comprendes el concepto de capas ocultas, funciones de activación no lineales, propagación hacia adelante y la idea intuitiva de retropropagación?
 
 - **4.3. Introducción a TensorFlow y Keras:**
   - **Por qué necesitamos estas librerías:** Escalabilidad, eficiencia (GPUs), grafos computacionales, optimización avanzada.
@@ -141,21 +130,18 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
   - **Implementación de la Misma Red Neuronal Multicapa con Keras/TensorFlow:**
     - Resolver el problema XOR o un problema similar de toy con Keras.
 
-**Pregunta de Comprensión:** ¿Cómo te sientes con la transición de la implementación manual a Keras? ¿Comprendes la función de los diferentes parámetros al construir y entrenar un modelo Keras?
-
 ---
 
 ## Módulo 5: Conceptos Clave y Buenas Prácticas en Machine Learning
 
 - **5.1. Overfitting (Sobreajuste) y Underfitting (Subajuste):**
+
   - **Explicación:** Qué son, cómo se ven en los gráficos de entrenamiento/validación.
   - **Identificación:** Curvas de pérdida y precisión.
   - **Técnicas de Regularización:**
     - **L1/L2 (Regularización de pesos):** Intuición de cómo penalizan pesos grandes para evitar la complejidad excesiva del modelo.
     - **Dropout:** Explicación conceptual de cómo "apagar" aleatoriamente neuronas durante el entrenamiento ayuda a la robustez.
   - **Validación Cruzada (Cross-Validation):** Explicación de K-Fold y por qué es importante para una evaluación robusta del modelo.
-
-**Pregunta de Comprensión:** ¿Entiendes los conceptos de overfitting/underfitting y las principales técnicas para mitigarlos?
 
 - **5.2. Datos y Preprocesamiento:**
   - **La importancia de los datos:** "Garbage in, garbage out."
@@ -169,13 +155,12 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
     - **Estandarización (Z-score Normalization):** Escalar datos a media 0 y desviación estándar 1.
     - ¿Por qué son importantes para algoritmos basados en distancia y Descenso de Gradiente?
 
-**Pregunta de Comprensión:** ¿Comprendes la importancia y las técnicas básicas de preprocesamiento de datos?
-
 ---
 
 ## Módulo 6: Introducción a Redes Neuronales Especializadas (Conceptual y Keras)
 
 - **6.1. Redes Neuronales Convolucionales (CNNs):**
+
   - **Caso de Uso:** Imágenes (y otras cuadrículas de datos).
   - **Concepto de Filtros (Kernels) y Convolución:**
     - ¿Cómo detectan patrones como bordes, texturas?
@@ -188,8 +173,6 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
     - Definición de capas `Conv2D`, `MaxPooling2D`, `Flatten`, `Dense`.
     - Entrenamiento y evaluación.
 
-**Pregunta de Comprensión:** ¿Captaste la intuición detrás de las CNNs y sus capas principales?
-
 - **6.2. Redes Neuronales Recurrentes (RNNs):**
   - **Caso de Uso:** Datos secuenciales (texto, series de tiempo, audio).
   - **Concepto de "Memoria" y Bucle Recurrente:**
@@ -201,8 +184,6 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
   - **Implementación Simple de una RNN o LSTM con Keras (ej. para un problema de secuencia muy básico o un ejemplo de juguete de texto):**
     - Definición de capas `SimpleRNN`, `LSTM`, `GRU`.
 
-**Pregunta de Comprensión:** ¿Entiendes el concepto de las RNNs para datos secuenciales y por qué surgieron las LSTMs/GRUs?
-
 ---
 
 ## Módulo 7: Otros Algoritmos de Machine Learning (Introducción conceptual)
@@ -213,9 +194,3 @@ _(Esto es un recordatorio, ya que hemos usado Python y NumPy. Solo para asegurar
   - La idea de encontrar el "hiperplano" óptimo que maximiza el margen entre clases.
 - **7.3. K-Means (Aprendizaje No Supervisado):**
   - Algoritmo de clustering (agrupamiento) para encontrar patrones en datos sin etiquetas.
-
----
-
-Este plan es ambicioso pero totalmente realizable con nuestro enfoque de construcción desde cero y preguntas de comprensión en cada paso. Estoy listo para el siguiente módulo cuando tú lo estés.
-
-¿Qué te parece este plan? ¿Hay algún tema que te gustaría añadir o ajustar?
