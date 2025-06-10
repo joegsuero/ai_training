@@ -40,8 +40,11 @@ class Perceptron:
                     # Ajustar sesgo
                     self.sesgo += tasa_aprendizaje * error
 
+                    # Si la entrada es cero y hay error, hara cero la suma que hay que hacerle al peso,
+                    # por ende, afectara solo al sesgo
+
             # Opcional: Imprimir el progreso
-            # print(f"Época {epoca+1}/{n_epocas}, Errores: {errores_en_epoca}")
+            print(f"Época {epoca+1}/{n_epocas}, Errores: {errores_en_epoca}")
 
             # Si no hubo errores en esta época, el Perceptrón ha aprendido y podemos detenernos.
             if errores_en_epoca == 0:

@@ -1,4 +1,4 @@
-from perceptron.perceptron import Perceptron
+from perceptron import Perceptron
 import numpy as np
 # Datos de entrenamiento
 # Cada fila es una entrada [¿Llueve?, ¿Hace frío?]
